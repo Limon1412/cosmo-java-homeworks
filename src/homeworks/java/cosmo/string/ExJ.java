@@ -10,6 +10,12 @@ package homeworks.java.cosmo.string;
 public class ExJ {
     public static void main(String[] args) {
         String[] input = {"Дом", "Стена", "Машина", "Телефон", "Кот", "Микроволновка", "Деньги", "Яхта" };
-
+        String max="";
+        for(String word : input){
+            if(word.length()>max.length()){
+                max=word;
+            }
+        }
+        System.out.println(max);
     }
 }
